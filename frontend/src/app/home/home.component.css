@@ -1,0 +1,368 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 15px;
+  padding-right: 15px;
+  color: rgb(255, 255, 255);
+  background-color: rgba(255, 255, 255, 0.85);
+  transition: background-color 0.3s, box-shadow 0.3s;
+  backdrop-filter: blur(10px);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.logo img {
+  width: 160px;
+  height: 85px;
+  padding-left: 15px;
+}
+
+.menu a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: black;
+}
+
+.menu a:hover {
+  margin: 0 15px;
+  color: #19485f;
+}
+
+.auth button {
+  margin-left: 10px;
+  padding: 8px 15px;
+  border-radius: 20px;
+  background-color: #007bff;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+.auth button:hover {
+  background-color: #0056b3;
+}
+
+.content {
+  margin-top: 80px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  flex-grow: 1;
+}
+
+.first-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-color: #d9e0a4;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.first-section h1 {
+  font-size: 4.5rem;
+  margin-bottom: 27px;
+  color: #19485f;
+}
+
+.generator_hero-button {
+  background-color: #ffffff03;
+  border-radius: 64px;
+  margin-top: 40px;
+  padding: 20px 26px;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 16px;
+  transition: transform 0.2s, background-color 0.3s, box-shadow 0.3s;
+  display: flex;
+  position: relative;
+  overflow: hidden;
+  transform: translate(0);
+  box-shadow: inset 0 0 1px #ffffff03, 0 21px 20px -19px #15142e80,
+    0 3px 4px -2px, inset 0 1px 1px #cbc7ffbf, inset 0 0 13px -3px #dafd7b,
+    inset 0 0 2px #ffffff2b;
+}
+
+.generator_hero-button:hover {
+  background-color: #ffffff0d;
+  color: #19485f;
+  transform: translate(0, -2px);
+  box-shadow: inset 0 0 3px #ffffff57, 0 23px 20px -19px #15142e80,
+    0 4px 4px -2px, inset 0 1px 1px #cbc7ffbf, inset 0 0 13px -3px #dafd7b,
+    inset 0 0 2px #ffffff2b;
+  cursor: pointer;
+}
+
+.first-section P {
+  font-size: 1.7rem;
+  margin-bottom: 20px;
+  color: #19485f;
+}
+
+.second-section {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 85px;
+}
+
+.second-section .content-left {
+  width: 50%;
+  padding-left: 90px;
+  padding-top: 75px;
+}
+
+.second-section .content-left h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.second-section .content-left p {
+  position: relative;
+  top: 22px;
+  font-size: 27px;
+}
+
+.second-section .content-right {
+  width: 35%;
+}
+
+.second-section img {
+  max-width: 100%;
+  height: auto;
+  position: relative;
+  right: 90px;
+  top: 50px;
+}
+
+.third-section {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.key-feature-image {
+  width: 40%;
+}
+
+.key-feature-image img {
+  height: 370px;
+  position: absolute;
+  bottom: -340px;  
+  left: 90px;
+}
+
+.key-features-content {
+  width: 55%;
+  position: relative;
+  right: 35px;
+  padding-right: 20px;
+}
+
+.key-features-content h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+.key-features-content p {
+  margin-bottom: 15px;
+  font-size: 19px;
+}
+
+.fourth-section {
+  margin-bottom: 40px;
+}
+
+.fourth-section h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.fourth-section ol {
+  list-style-type: decimal;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+.fourth-section li {
+  margin-bottom: 15px;
+  font-size: 1.2rem;
+}
+
+footer {
+  background-color: #3aa1d0;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.footer-options a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: white;
+}
+
+.steps-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin: 40px 50px;
+  gap: 50px;
+  position: relative;
+}
+
+.step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  flex: 1;
+  padding: 30px;
+  gap: 10px;
+}
+
+.step-icon {
+  background-color: #2d8cff;
+  color: white;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.step-content h3 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.step-content p {
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.steps-section::before {
+  content: "";
+  position: absolute;
+  top: 50px;
+  left: 10%;
+  right: 10%;
+  height: 2px;
+  background-color: #2d8cff;
+  z-index: -1;
+}
+
+.step:not(:first-child)::before {
+  content: "";
+  position: absolute;
+  top: 50px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #2d8cff;
+  z-index: -1;
+}
+
+.hiw{
+  display: flex;
+  justify-content: center;
+  font-size: 2rem;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  font-family: Arial, sans-serif;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-toggle {
+  cursor: pointer;
+  font-size: 16px;
+  padding: 10px;
+  text-decoration: none;
+  color: #333;
+}
+
+.arrow {
+  font-size: 24px;
+  margin-left: 5px;
+  position: relative;
+  top: 2px;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 35px;
+  background-color: #ffffff;
+  min-width: 200px;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  padding: 12px;
+  z-index: 1;
+  border-radius: 4px;
+}
+
+.show {
+  display: block;
+}
+
+.doc-maker-btn {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.doc-maker-btn .icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+.doc-maker-btn:hover {
+  color: #007bff;
+}
+
+
+@media (max-width: 768px) {
+  .steps-section {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .steps-section::before {
+    display: none; 
+  }
+
+  .step {
+    margin-bottom: 20px;
+  }
+}

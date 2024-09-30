@@ -1,0 +1,155 @@
+<ngx-spinner
+  bdColor="rgba(0, 0, 0, 0.8)"
+  size="medium"
+  color="#fff"
+  type="square-jelly-box"
+  [fullScreen]="true"
+>
+  <p class="loader"></p></ngx-spinner
+>
+
+<div class="app-container">
+  <div class="header">
+    <img src="assets/pozent.png" alt="" class="logo" />
+    <h1 class="pozpro">Technical Document</h1>
+    <button
+      pButton
+      type="button"
+      icon="pi pi-user"
+      class="p-button-rounded p-button-secondary sidenav-button"
+      id="proicon"
+      (click)="toggleSidenav()"
+      pTooltip="Profile"
+      tooltipPosition="top"
+    ></button>
+    <button
+      pButton
+      type="button"
+      icon="pi pi-home"
+      class="p-button-rounded p-button-secondary"
+      (click)="goHome()"
+      id="proicon1"
+      pTooltip="Home"
+      tooltipPosition="top"
+    ></button>
+  </div>
+
+  <div class="content">
+    <div class="left-panel">
+      <div class="border">
+        <form
+          [formGroup]="techDocForm"
+          (ngSubmit)="generateTechnicalDocument()"
+          class="brd-form"
+        >
+          <div class="form-field">
+            <label class="docsum" for="summary"
+              >Enter Your Project Summary</label
+            >
+            <textarea
+              pInputTextarea
+              id="summary"
+              formControlName="summary"
+              rows="6"
+              class="full-width"
+            ></textarea>
+          </div>
+
+          <div class="form-field">
+            <label for="language">Choose a Language : </label>
+            <p-dropdown
+              [options]="languages"
+              formControlName="language"
+              placeholder="Select Language"
+              class="full-width"
+            ></p-dropdown>
+          </div>
+
+          <button
+            pButton
+            type="submit"
+            label="Generate"
+            [disabled]="!techDocForm.valid"
+            class="genbutton"
+          ></button>
+        </form>
+      </div>
+    </div>
+
+    <div class="right-panel">
+      <div *ngIf="techDocContent">
+        <h3 class="output-title">Generated Technical Document</h3>
+        <textarea
+          *ngIf="isTechDocEditing"
+          matInput
+          [(ngModel)]="editedTechDocContent"
+          rows="20"
+          class="brd-textarea"
+        ></textarea>
+        <textarea
+          *ngIf="!isTechDocEditing"
+          matInput
+          [value]="techDocContent"
+          rows="20"
+          class="brd-textarea"
+          readonly
+        ></textarea>
+
+        <div class="buttons">
+          <button
+            mat-raised-button
+            color="primary"
+            class="edit"
+            (click)="toggleTechDocEdit()"
+          >
+            {{ isTechDocEditing ? "Save" : "Edit" }}
+          </button>
+          <p-button
+            icon="pi pi-file-pdf"
+            severity="danger"
+            class="p-button-secondary download-pdf"
+            (onClick)="downloadTechDocPDF()"
+            [disabled]="isTechDocEditing"
+            pTooltip="Download as PDF"
+            tooltipPosition="left"
+          ></p-button>
+          <p-button
+            icon="pi pi-file-word"
+            class="p-button-secondary download-word"
+            (onClick)="downloadTechnicalDocument()"
+            [disabled]="isTechDocEditing"
+            pTooltip="Download as Word File"
+            tooltipPosition="left"
+          ></p-button>
+        </div>
+      </div>
+      <div *ngIf="!techDocContent" class="centered-message">
+        <p>
+          <strong class="welcome">Welcome to DocuForge AI </strong>
+        </p>
+        <p>
+          <strong class="describe">
+            - Crafting Documents with Precision and Intelligence.
+          </strong>
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">
+    <p class="copyright">&copy; 2024 Pozent. All Rights Reserved.</p>
+  </div>
+
+  <p-sidebar [(visible)]="isSidenavOpen" position="right" class="sidenav">
+    <img src="assets/logout.png" alt="" class="logo1" />
+    <br />
+    <h3>{{ email }}</h3>
+    <button pButton (click)="logout()" class="logoffbut">
+      Logout<i
+        class="pi pi-sign-out"
+        style="font-size: 1rem"
+        id="logoutbut"
+      ></i>
+    </button>
+  </p-sidebar>
+</div>

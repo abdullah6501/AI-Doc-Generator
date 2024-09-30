@@ -1,0 +1,68 @@
+.split-screen {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+}
+
+.left-side {
+  flex: 1;
+  background-color: #5eb8ff;
+}
+
+.loginimg {
+  height: 400px;
+  width: 600px;
+  position: relative;
+  top: 230px;
+}
+
+.right-side {
+  flex: 1;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  background-color: #f7f7f7;
+}
+
+.logo{
+  width: 118px;
+  height: 40px;
+  position: absolute;
+  top: 165px;
+  right: 265px;
+}
+
+.login-container {
+  background-color: white;
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  width: 100%;
+  text-align: center;
+  display: grid;
+  gap: 10px;
+}
+
+.login-container h2 {
+  margin-bottom: 20px;
+}
+
+.login-container input,
+.login-container p-password,
+.login-container p-button {
+  margin-top: 15px;
+  width: 100%;
+}
+
+.login-container p-button {
+  margin-top: 20px;
+}
+
+::ng-deep .pass .p-password input {
+  width: 320px !important;
+}
+
+.buttons{
+  display: grid;
+}

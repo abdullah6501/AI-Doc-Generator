@@ -1,0 +1,30 @@
+<div class="split-screen">
+  <div class="left-side">
+    <img src="assets/login21.png" alt="Login Image" class="loginimg">
+  </div>
+  <div class="right-side">
+    <img src="assets/pozent.png" alt="" class="logo">
+    <div class="login-container">
+      <h2>Login</h2>
+      <input type="text" placeholder="Email" pInputText [(ngModel)]="email" />
+      <p-password
+        class="pass"
+        [(ngModel)]="password"
+        placeholder="Password"
+        [toggleMask]="true"
+      ></p-password>
+      <br>
+      <div class="buttons">
+        <p-button label="Login" (click)="login()"></p-button>
+        <p-button
+          label="Register"
+          (click)="navigateToRegister()"
+          [text]="true"
+        ></p-button>
+      </div>
+    </div>
+  </div>
+</div>
+<p-toast key="tl"></p-toast>
+<p-toast key="t2"></p-toast>
+<p-toast key="t3"></p-toast>

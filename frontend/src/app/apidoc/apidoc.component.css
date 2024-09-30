@@ -1,0 +1,344 @@
+.app-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.header {
+  background-color: #3AA1D0;
+  color: #fff;
+  padding: 15px;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.pozpro {
+  font-size: 24px;
+  position: absolute;
+  left: 40%;
+}
+
+.sidenav-button {
+  color: #fff;
+}
+
+.footer {
+  background-color: #3AA1D0;
+  color: #fff;
+  text-align: center;
+  display: flex;
+  padding-left: 7px;
+  padding-top: 5px;
+  padding-bottom: 2px;
+  justify-content: left;
+  padding: 5px;
+}
+
+.copyright {
+  margin: 0;
+}
+
+.brd-form {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.content {
+  display: flex;
+  flex: 1;
+  background-image: url("/assets/bg4.webp");
+  /* background-image: url("/assets/bg1.jpg"); */
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.left-panel {
+  padding: 10px;
+  border: 1px solid #ccc;
+  overflow-y: auto;
+  max-height: 1000px;
+  border-bottom: #fff;
+  border-right: #fff;
+  background-color: #d7d7d72b;
+}
+
+.right-panel {
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+  border: 1px solid #ccc;
+  overflow-y: auto;
+  position: relative;
+  background-color: #d7d7d72b;
+}
+
+.centered-message {
+  font-size: 24px;
+  color: #002b3e;
+  /* display: flex; */
+  /* justify-content: center; */
+  /* align-items: center; */
+  position: absolute;
+  top: 40%;
+  left: 50px;
+}
+
+.logoffbut {
+  position: relative;
+  top: 40px;
+}
+
+#logoutbut {
+  position: relative;
+  left: 6px;
+}
+
+.welcome {
+  position: relative;
+  top: 222px;
+  left: 165px;
+  font-size: xx-large;
+}
+
+.genbutton {
+  position: relative;
+  left: 170px;
+}
+
+.describe {
+  position: relative;
+  top: 230px;
+  left: 65px;
+}
+
+.form-field {
+  margin-bottom: 20px;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.submit-button {
+  width: 100%;
+  background-color: #007bff;
+  color: #fff;
+  margin-top: 10px;
+}
+
+.submit-button:disabled {
+  background-color: #ccc;
+}
+
+.brd-output {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.output-title {
+  margin-bottom: 15px;
+  font-size: 18px;
+  color: #333;
+}
+
+.brd-textarea {
+  width: 680px;
+  height: 680px;
+  padding: 10px;
+  font-family: inherit;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  margin-left: 35px;
+  resize: none;
+}
+
+.download-button {
+  background-color: #ff4081;
+  color: #fff;
+  width: 100%;
+}
+
+.download-button:hover {
+  background-color: #e91e63;
+}
+
+h2 {
+  color: #333;
+}
+
+button[mat-raised-button] {
+  margin-top: 20px;
+  background-color: #007bff;
+  color: #ffffff;
+}
+
+button[mat-raised-button]:hover {
+  background-color: #0056b3;
+}
+
+.sidenav-container {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 250px;
+}
+
+.sidenav {
+  background-color: #fff;
+  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2);
+  /* padding: 20px; */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+#proicon {
+  position: relative;
+  left: 94%;
+}
+
+#proicon1 {
+  position: absolute;
+  left: 88%;
+}
+
+.edit {
+  position: relative;
+  bottom: 19px;
+}
+
+.buttons {
+  position: absolute;
+  top: 20px;
+  right: 50px;
+  display: flex;
+  gap: 30px;
+}
+
+.sidenav h3 {
+  /* margin-bottom: 50px;
+  margin-left: 40px;
+  color: #002b3e;
+  position: relative;
+  top: 60px; */
+  position: relative;
+  top: 60px;
+  display: flex;
+  justify-content: center;
+}
+
+.sidenav button {
+  position: relative;
+    left: 90px;
+    top: 80px;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.logo {
+  width: 118px;
+  height: 40px;
+  position: absolute;
+  top: 10px;
+  left: 20px;
+}
+
+.logo1 {
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  right: 120px;
+}
+
+.down {
+  position: absolute;
+  top: 85%;
+  right: 50px;
+}
+
+.docsum {
+  position: relative;
+  bottom: 10px;
+}
+
+.robotimg {
+  height: 200px;
+  width: 200px;
+}
+
+.border {
+  border: 1px solid #18aeff;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+/* HTML: <div class="loader"></div> */
+.loader {
+  width: fit-content;
+  font-weight: bold;
+  font-family: monospace;
+  font-size: 30px;
+  background:linear-gradient(90deg,#000 50%,#0000 0) right/200% 100%;
+  animation: l21 2s infinite linear;
+}
+.loader::before {
+  content :"Generating";
+  color: #0000;
+  padding: 0 5px;
+  background: inherit;
+  background-image: linear-gradient(90deg,#fff 50%,#000 0);
+  -webkit-background-clip:text;
+          background-clip:text;
+}
+
+@keyframes l21{
+  100%{background-position: left}
+}
+
+@media (min-width: 1025px) {
+  .left-panel {
+    flex: 40%;
+  }
+
+  .right-panel {
+    flex: 60%;
+  }
+}
+
+@media (max-width: 991px) {
+  .right-panel {
+    width: 100%;
+    padding: 0;
+  }
+  .genbutton {
+    left: 50px;
+  }
+  .welcome {
+    font-size: 20px;
+  }
+  .describe {
+    font-size: 18px;
+  }
+  .centered-message {
+    top: 43%;
+    left: -19px;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .left-panel {
+    flex: 40%;
+  }
+
+  .right-panel {
+    flex: 60%;
+  }
+}

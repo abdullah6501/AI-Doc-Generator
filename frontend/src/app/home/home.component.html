@@ -1,0 +1,154 @@
+<div class="container">
+  <header>
+    <div class="logo">
+      <img src="assets/docuforge2.png" alt="Logo" />
+    </div>
+    <div class="menu">
+      <div class="dropdown">
+        <a href="javascript:void(0)" class="dropdown-toggle" (click)="toggleDropdown()">
+          Product <span class="arrow">&#9662;</span>
+        </a>
+        <div class="dropdown-content" [ngClass]="{'show': dropdownOpen}">
+          <button class="doc-maker-btn" (click)="goToDocuGenPage()">
+            <img src="assets/favlogo.jpg" alt="Doc Maker Icon" class="icon" />
+            Doc Maker
+          </button>
+        </div>
+        <a href="https://pozent.com/about-us/">About</a>
+        <a href="https://pozent.com/contact-us/">Contact</a>
+      </div>
+    </div>
+    
+    <div class="auth">
+      <button (click)="login()">Sign In</button>
+      <button (click)="register()">Sign Up</button>
+    </div>
+  </header>
+
+  <div class="content">
+    <div class="first-section">
+      <h1>Welcome to DocuForge AI</h1>
+      <p><strong>Your Ultimate Document Creation Partner!</strong></p>
+      <br />
+      <p>Streamline. Simplify. Succeed.</p>
+      <button class="generator_hero-button" (click)="goToDocuGenPage()">
+        Generate Document
+      </button>
+    </div>
+
+    <div class="second-section">
+      <div class="content-left">
+        <h2>AI-Powered Document Generator</h2>
+        <p>
+          Unleash the power of intelligent document creation with Docuforge AI.
+          <br />Transform text prompts into appealing documents in seconds.
+        </p>
+      </div>
+      <div class="content-right">
+        <img src="assets/trydoc.jpg" alt="Doc Image" />
+      </div>
+    </div>
+
+    <div class="third-section">
+      <div class="key-feature-image">
+        <img src="assets/datapic.png" alt="Feature Image" />
+      </div>
+      <div class="key-features-content">
+        <h2>Key Features</h2>
+        <p>
+          ✨ <strong>Automated Document Creation:</strong><br />
+          Say goodbye to manual formatting! With our templates, create documents
+          in just a few clicks.
+        </p>
+        <p>
+          🌍 <strong>Multi-Language Support:</strong><br />
+          Break down language barriers! Generate documents in various languages,
+          making communication seamless and effective.
+        </p>
+        <p>
+          📂 <strong>Easy Viewing & Downloading:</strong><br />
+          Quickly view, download, and share your documents with just a few
+          clicks. Efficiency at your fingertips!
+        </p>
+      </div>
+    </div>
+
+    <h2 class="hiw">How It Works</h2>
+    <div class="steps-section">
+      <div class="step">
+        <div class="step-icon">
+          <span>1</span>
+        </div>
+        <div class="step-content">
+          <h3>Step 1</h3>
+          <p>
+            Access the user-friendly interface to choose your desired document
+            type (e.g., BRD, FRD, etc.).
+          </p>
+        </div>
+      </div>
+
+      <div class="step">
+        <div class="step-icon">
+          <span>2</span>
+        </div>
+        <div class="step-content">
+          <h3>Step 2</h3>
+          <p>
+            Fill in your project information effortlessly. Provide the necessary
+            details and let our AI take over.
+          </p>
+        </div>
+      </div>
+
+      <div class="step">
+        <div class="step-icon">
+          <span>3</span>
+        </div>
+        <div class="step-content">
+          <h3>Step 3</h3>
+          <p>
+            Select your preferred language and watch as the AI translates and
+            adjusts your document flawlessly.
+          </p>
+        </div>
+      </div>
+
+      <div class="step">
+        <div class="step-icon">
+          <span>4</span>
+        </div>
+        <div class="step-content">
+          <h3>Step 4</h3>
+          <p>
+            Take a moment to review the generated document, make any necessary
+            tweaks, and ensure it meets your standards.
+          </p>
+        </div>
+      </div>
+
+      <div class="step">
+        <div class="step-icon">
+          <span>5</span>
+        </div>
+        <div class="step-content">
+          <h3>Step 5</h3>
+          <p>
+            Download your finalized document in your chosen format and share it
+            with confidence—ready to impress!
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="footer-options">
+      ©2024 Pozent. All Rights Reserved.
+      <!-- <a href="#">Privacy</a>
+      <a href="#">Terms</a> -->
+      <a href="https://pozent.com/about-us/">About</a>
+      <a href="https://pozent.com/contact-us/">Contact Us</a>
+    </div>
+  </footer>
+</div>
